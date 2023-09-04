@@ -1,0 +1,141 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.side-bar-container {
+  width: 21%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 99;
+}
+.sideBarContent {
+  background-color: rgb(0, 0, 0);
+  width: 80%;
+}
+.openSideBar {
+  width: 20%;
+  background-color: white;
+}
+.list {
+  list-style: none;
+}
+ul {
+  position: absolute;
+  top: 2%;
+  padding-left: 1rem;
+}
+li {
+  color: white;
+  margin: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.sideInfo {
+  position: absolute;
+  bottom: 4%;
+  margin-left: 10%;
+}
+.sideInfo p {
+  color: white;
+}
+.bar {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.fa-xmark {
+  display: none;
+}
+.global {
+  cursor: pointer;
+}
+/*######################## end of Side Bar ################## */
+.row img {
+  cursor: pointer;
+  border-radius: 7px;
+}
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.meal:hover .meal-layer{
+    top: 0;
+}
+.alert-info{
+  padding: 1%;
+  font-size: 1rem;
+}
+.alert-danger{
+  padding: 1%;
+  font-size: 1rem;
+}
+.categ-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.categories:hover .categ-layer{
+  top: 0;
+}
+
+/*######################## end of Categories ################## */
+
+.cursor{
+  cursor: pointer;
+}
+
+.input-group input::placeholder {
+  color: #696B6B;
+  opacity: 1; /* Firefox */
+}
+
+#submit-btn{
+  width: fit-content;
+  text-align: center;
+  margin:auto;
+  cursor: pointer;
+  background-color: transparent;
+  color: red;
+}
+.alert-danger {
+  width: fit-content;
+}
+
+
+
+/* ############################## */ 
+.loading{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  z-index: 999;
+  background-color: #100e0e;
+}
+
+.inner-loading-screen{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  margin-top:20% ;
+  z-index: 9;
+  background-color: #0D0D0D;
+  display: flex;
+}
